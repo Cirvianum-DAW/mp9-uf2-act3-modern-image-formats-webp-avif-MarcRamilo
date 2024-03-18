@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Format Experiment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="bg-red-500 text-white text-center p-5">
+    <h1 class="text-4xl">Image Format Experiment: WEBP - AVI</h1>
+  </header>
+  <div class="text-center">
+    <a href="#" class="text-blue-500 hover:text-blue-700 underline">NETLIFY LINK</a>
+    <a href="#" class="text-blue-500 hover:text-blue-700 underline">GITHUB LINK</a>
+    <a href="../index.html" class="text-blue-500 hover:text-blue-700 underline">Home</a>
+  </div>
+
+  <nav>
+    <ul class="flex justify-center bg-red-300 p-5">
+      <li class="mx-5">
+        <a href="/src/homer.html">Homer</a>
+      </li>
+      <li class="mx-5">
+        <a href="/src/logotip.html">Logotip</a>
+      </li>
+      <li class="mx-5">
+        <a href="/src/plujaEstels.html">Pluja Estels</a>
+      </li>
+      <li class="mx-5">
+        <a href="/src/postaDeSol.html">Posta de Sol</a>
+      </li>
+      <li class="mx-5">
+        <a href="/src/transparency.html">Transparency</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+    <div>
+      <h1>Original</h1>
+      <img src="../images/transparency.png" alt="Example 2" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>JPG Lossing 99% 0,52/1</h1>
+      <img src="../images/transparency/transparency99_052.jpg" alt="Example 2" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>JPG Lossing 99% 0,02/1</h1>
+      <img src="../images/transparency/transparency_99_02.jpg" alt="Example 2" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>JPG Max 59% 1/1</h1>
+      <img src="../images/transparency/transparency_max.jpg" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+       
+    <div>
+      <h1>WEBP Max 83% 3,1/100</h1>
+      <img src="../images/transparency/transparency_83_3,1.webp" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>WEBP Max 83% 76/100</h1>
+      <img src="../images/transparency/transparency_83_76.webp" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+    <div>
+      <h1>WEBP Max 77% 100/100</h1>
+      <img src="../images/transparency/transparency_max.webp" class="w-full original" />
+      <div class="image-info"></div>
+    </div>
+  </main>
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>
