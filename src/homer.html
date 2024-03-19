@@ -12,6 +12,8 @@
 <body>
     <header class="bg-red-500 text-white text-center p-5">
         <h1 class="text-4xl">Image Format Experiment: WEBP - AVI</h1>
+        <h5 class="text-2xl">Compressed with: <a href="https://squoosh.app/">Squoosh</a> GIF with GIMP</h5>
+
     </header>
     <div class="text-center">
         <a href="#" class="text-blue-500 hover:text-blue-700 underline">NETLIFY LINK</a>
@@ -35,11 +37,16 @@
             <li class="mx-5">
                 <a href="/src/transparency.html">Transparency</a>
             </li>
+            <li class="mx-5">
+                <a href="/src/avif.html">Avif</a>
+            </li>
         </ul>
     </nav>
-   
+    <h1 class="text-4xl pl-10">Questions</h1>
+    <p class="text-base text-blue-600 pl-10 ">What happens with GIF file? Can we use WebP to replace it?</p>
+    <p class="text-base text-green-600 pl-10 pb-10">Yes, WEBP can renderize the animation, JPEG can't do it. And the quality/size of WEBP is better than JPEG one's. </p>
     <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
-        
+
         <div>
             <h1>Original GIF</h1>
             <img src="../images/homer.gif" alt="Example 1" class="w-full" />
@@ -85,11 +92,10 @@
             <img src="../images/homer/homer_gimp_c_0.jpg" alt="Example 1" class="w-full original" />
             <div class="image-info"></div>
         </div>
-       
+
     </main>
- 
+
     <script src="../scripts/main.js"></script>
 </body>
 
 </html>
-
